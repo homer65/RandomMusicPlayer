@@ -42,6 +42,7 @@ public class MP3Player extends Application
         	musik_home = chooser.getSelectedFile();
         }
     	getLieder(musik_home);
+    	System.out.println("Anzahl MP3 eingelesen: " + lieder.size());
     	audioClip = createNextClip();
     	audioClip.play();
      	MyThread mt = new MyThread(audioClip);
