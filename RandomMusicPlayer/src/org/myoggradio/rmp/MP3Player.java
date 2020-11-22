@@ -20,16 +20,7 @@ public class MP3Player extends Application
     private static ArrayList<File> lieder = new ArrayList<File>();
     public static File musik_home = new File("Z:\\Musik");
     public static boolean shouldPlay = true;
-     
-    public static void main(String[] args) 
-    {
-        if (args.length > 0)
-        {
-        	musik_home = new File(args[0]);
-        }
-        Application.launch(args);
-    }
-     
+       
     @Override
     public void init() throws MalformedURLException 
     {
